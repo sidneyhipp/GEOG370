@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Walking_Path_GeoJSON",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 2 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -79.050632805906005, 35.915198139232068 ], [ -79.051469073442931, 35.913612669085836 ], [ -79.050290696459058, 35.911088165608625 ] ] ] } }
+]
+}
