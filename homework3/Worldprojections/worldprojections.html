@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>Homework 3: World Map Projections</h1>
+    
+    <h2 style="color:red">How I displayed the map in different projections using QGIS</h2>
+    <p>In order to change the projection of a world map in QGIS, I first downloaded a natural earth map. Then, I would go to the properties of the project and change the projection to various different types. Then, I used the Indicatrix plugin to display Tissot circles that would show how different projections have different distortions. I exported each projection using a new print layout on QGIS and downloaded them as a png to GitHub.</p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>This projection appears to conserve shape and area near the equator and become more distorted as as you move towards the poles. The latitudes and longitudes remain at right angles.</h3>
+    <a href="./Projections/WGS84_4326.png">
+    <img src="./Projections/WGS84_4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>This projection is a compromise between distortion of shape and area with the majority of the map under some sort of distortion. The map takes on an ellipse shape and the longitudes and latitudes appear curved.</h3>
+    <a href="./Projections/World_Aitoff.png">
+    <img src="./Projections/World_Aitoff.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 3857: Pseudo Mercator Projection</h2>
+    <h3>This projection effectively conserves shape, but distorts area as you move to the poles. The longitudinal and latitudinal lines form right angles.</h3>
+    <a href="./Projections/Pseudo_Mercator_3857.png">
+    <img src="./Projections/Pseudo_Mercator_3857.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 53018: Sphere Winkel I</h2>
+    <h3>This projection is relatively good at conserving area, especially near the equator, but it has some shape distortions. The longitudinal and latitudinal lines are curved. Additionally, this map appears more spherical than ellipsical.</h3>
+    <a href="./Projections/Sphere_Winkel_I.png">
+    <img src="./Projections/Sphere_Winkel_I.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 54034: World Cylindrical Equal Area</h2>
+    <h3>This projection conserves area, but at the cost of some severe shape distortions, especially near the poles. The map is in a rectangular shape.</h3>
+    <a href="./Projections/World_Cylindrical_Equal_Area_54034.png">
+    <img src="./Projections/World_Cylindrical_Equal_Area_54034.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 54027: World Equidistant Conic</h2>
+    <h3>This projection preserves distance along all meridians and two standard parallels. As you move away from the standard latitudes in the center of the map, distortion increases in both area and shape. This projection is ideal for areas running east to west.</h3>
+    <a href="./Projections/World_Equidistant_Conic_54027.png">
+    <img src="./Projections/World_Equidistant_Conic_54027.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 102016: North Pole Azimuthal Equidistant</h2>
+    <h3>This projection, is different from the world equidistant conic, in that it joins the end of the map together into a complete circle. The center of the map preserves shape and area, but distortion increases greatly as you move to latitudes further away from the center of the map.</h3>
+    <a href="./Projections/North_Pole_Azimuthal_Equidistant_102016.png">
+    <img src="./Projections/North_Pole_Azimuthal_Equidistant_102016.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 54030: World Robinson</h2>
+    <h3>This is a popular projection, used by National Geographic. This projection presents a good compromise between conserving area and shape. The map is in the shape of an ellipse with curved latitude and longitude lines displayed.</h3>
+    <a href="./Projections/World_Robinson_54030.png">
+    <img src="./Projections/World_Robinson_54030.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 102034: North Pole Gnomonic</h2>
+    <h3>This projection is unique in that there is no end to the map. The latitudes other than the standard latitudes do not appear on the map and just presents an infinite distortion. It conserves shape and area in the center of the map.</h3>
+    <a href="./Projections/North_Pole_Gnomonic_102034.png">
+    <img src="./Projections/North_Pole_Gnomonic_102034.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
