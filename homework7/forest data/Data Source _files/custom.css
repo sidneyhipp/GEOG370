@@ -1,0 +1,6 @@
+/* Fix Tag fields:
+ https://github.com/ckan/ckanext-scheming/issues/219 */
+.select2-container.select2-container-multi.form-control {
+  height: auto;
+  padding: unset;
+}

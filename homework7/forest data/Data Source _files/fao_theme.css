@@ -1,0 +1,155 @@
+:root {
+  --faocolor: #0d6cac;
+  --managebtncolor: #5cb85c;
+}
+body {
+    background: transparent;
+}
+
+.toolbar .breadcrumb a {
+    color: #000 !important;
+}
+
+.masthead {
+    background: var(--faocolor);
+}
+
+.account-masthead {
+    background: #0d6cac;
+}
+
+:is(.actions, .content_action) [href*="edit"]:not([title~=settings]) {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.account-masthead .account ul li {
+    border-left: 1px solid var(--faocolor);
+}
+
+.media-grid, .module-grid {
+  background: transparent;
+}
+.hero {
+     background: transparent;
+}
+
+[role=main], .main {
+     background: transparent;
+}
+
+.homepage .module-search .module-content {
+    border-radius: 3px 3px 0 0;
+    background-color: var(--faocolor);
+    border-bottom: none;
+}
+.homepage .module-search .tags {
+    padding: 5px 10px 10px 10px;
+    background-color: var(--faocolor);
+    border-radius: 0 0 3px 3px;
+}
+.mdl-card{
+    margin-bottom: 10px;
+    margin-block: 10px;
+}
+
+.btn-manage{
+  /*margin-left: 100px;*/
+    float: inline-start;
+    position: relative;
+}
+
+.btn-primary, 
+.btn-primary:active,
+.btn-primary:visited {
+  color: #333 !important;
+  background-color: #fff !important;
+  border-color: #ccc !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #333 !important;
+  text-decoration: none !important;
+  background-color: #e6e6e6 !important;
+  border-color: #adadad !important;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+/* HOME */
+
+.fao_card_container {
+  padding: 2px 16px;
+}
+
+.fao_card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 8px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.fao_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* LIST */
+
+.fao_list_item {
+  /* Add shadows to create the "card" effect */
+  transition: 0.3s;
+  padding: 8px;
+}
+/* On mouse-over, add a deeper shadow */
+.fao_list_item:hover {
+  border-style: ridge;
+  margin: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+/* .fao-resource-button-hidden {
+  display: none;
+}
+.fao-resource-button:hover .fao-resource-button-hidden {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} */
+
+.fao-resource-item{
+  display: block;
+}
+.fao-resource-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.fao-resource-button {
+  padding-inline: 5px;
+}
+
+/* .fao-resource-item .btn{
+  margin: 5px;
+}
+.fao-resource-item .btn {
+  opacity:0.8;
+}
+.fao-resource-item .btn:hover {
+  opacity:1.0;
+  text-decoration:none;
+}
+.fao-resource-item .btn:active {
+  text-decoration:none;
+}
+.fao-resource-item .btn:focus {
+  text-decoration:none;
+}
+.fao-resource-item .btn:visited {
+  text-decoration:none !important;
+} */
